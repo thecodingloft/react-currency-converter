@@ -1,0 +1,82 @@
+.currency-converter {
+    background: var(--bg-dark-2);
+    padding: 25px;
+    border-radius: var(--radius-10);
+    width: 50%;
+    max-width: 500px;
+    box-shadow: var(--shadow-1);
+    text-align: center;
+}
+
+.currency-converter__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-field {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+}
+
+.form-field label,
+.form-field input,
+.form-field select {
+    margin: 10px 0;
+}
+
+.form-field input,
+.form-field select {
+    background: var(--bg-dark-3);
+    padding: 10px;
+    border: none;
+    color: var(--color-1);
+}
+
+.form-field input {
+    transition: all .2s ease-in;
+}
+
+.form-field input:focus {
+    outline: none;
+    border-bottom: 3px solid white;
+}
+
+.form-field select option {
+    padding: 10px;
+}
+
+.form-submit {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.output-container {
+    background: var(--bg-dark-3);
+    width: 80%;
+    margin: 20px auto;
+    border-radius: var(--radius-5);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.output-container p {
+    padding: 0;
+    margin: 5px;
+}
+
+.output-container a {
+    margin-left: auto;
+}
+
+.output-container a:hover {
+    cursor: pointer;
+}
